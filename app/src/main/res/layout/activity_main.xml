@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Main"
-    android:background="@drawable/forest3"
+
     >
+
+    <ImageView
+        android:id="@+id/main_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+
 
     <LinearLayout
         android:id="@+id/main_LAY_main"
@@ -36,6 +44,7 @@
                 android:gravity="center"
                 android:textSize="50sp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/aclonica"
 
                 />
 
@@ -57,6 +66,16 @@
             android:layout_weight="110"
             android:orientation="vertical"
             >
+            <ProgressBar
+                android:id="@+id/main_PB"
+                android:paddingTop="10dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:backgroundTintMode="src_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="14"
+                android:min="0"/>
 
             <LinearLayout
                 android:id="@+id/main_LAY_center_top"
@@ -102,7 +121,7 @@
                     android:background="@color/cardview_shadow_end_color"
                     android:gravity="center"
                     android:layout_gravity="center"
-                    android:src="@drawable/blades"
+
 
                     ></ImageButton>
 
@@ -133,6 +152,7 @@
                 android:gravity="center"
                 android:textSize="50sp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/aclonica"
 
                 />
 

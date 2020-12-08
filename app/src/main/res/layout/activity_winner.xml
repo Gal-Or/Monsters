@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Winner"
-    android:background="@drawable/red_curtain">
+    tools:context=".Activity_Winner">
+
+
+    <ImageView
+        android:id="@+id/winner_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
 
     <LinearLayout
         android:id="@+id/winner_LAY_second_page"
@@ -18,13 +25,14 @@
             android:id="@+id/winner_LBL_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="50dp"
-            android:text="@string/winner"
             android:layout_gravity="center"
-            android:paddingBottom="30dp"
+            android:layout_weight="1"
             android:paddingTop="35dp"
+            android:paddingBottom="30dp"
+            android:text="@string/winner"
             android:textColor="@color/white"
+            android:textSize="50dp"
+            android:fontFamily="@font/aclonica"
             />
 
         <ImageView
@@ -42,11 +50,10 @@
             android:id="@+id/winner_BTN_replay"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_weight="1"
             android:layout_gravity="center"
-            android:src="@drawable/replay"
-            android:scaleType="fitCenter"
+            android:layout_weight="1"
             android:background="@color/cardview_shadow_end_color"
+            android:scaleType="fitCenter"
             />
 
 
