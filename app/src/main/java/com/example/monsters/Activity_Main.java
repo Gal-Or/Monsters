@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class Activity_Main extends Activity_Base {
 
-
     private MainViewController main_controller;
 
     @Override
@@ -21,10 +20,7 @@ public class Activity_Main extends Activity_Base {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         main_controller= new MainViewController(this);
-
 
     }
 
@@ -33,7 +29,6 @@ public class Activity_Main extends Activity_Base {
         super.onStart();
         if(main_controller.isClicked())
             main_controller.startTimer();
-
     }
 
     @Override
