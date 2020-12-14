@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class Activity_Main extends Activity_Base {
 
     private MainViewController main_controller;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
